@@ -1,0 +1,26 @@
+{
+  "name": "mcp-md-tools",
+  "version": "1.0.0",
+  "description": "MCP Server to access MD Tools",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.25.20"
+  },
+  "scripts": {
+    "dev": "nodemon server/express-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Dev-Stuff/mcp-md-tools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-Dev-Stuff/mcp-md-tools/issues"
+  },
+  "homepage": "https://github.com/The-Dev-Stuff/mcp-md-tools#readme"
+}
