@@ -6,3 +6,15 @@ This is a very bare bones implementation of an MCP server with StreamableHttp fo
 
 
 ![img.png](img.png)
+
+
+
+## Samples
+
+**Validation errors on submit**
+
+![img_1.png](img_1.png)
+
+**Submit with valid payload**
+
+![img_2.png](img_2.png)
