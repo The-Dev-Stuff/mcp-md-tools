@@ -18,7 +18,23 @@
       "description": "Call POST /api/v1/Activities",
       "parameters": {
         "type": "object",
-        "properties": {},
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "dueDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "completed": {
+            "type": "boolean"
+          }
+        },
         "required": []
       }
     }
@@ -53,6 +69,17 @@
           "id": {
             "type": "integer",
             "format": "int32"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "dueDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "completed": {
+            "type": "boolean"
           }
         },
         "required": [
@@ -99,7 +126,24 @@
       "description": "Call POST /api/v1/Authors",
       "parameters": {
         "type": "object",
-        "properties": {},
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idBook": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
         "required": []
       }
     }
@@ -153,6 +197,18 @@
           "id": {
             "type": "integer",
             "format": "int32"
+          },
+          "idBook": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
           }
         },
         "required": [
@@ -199,7 +255,32 @@
       "description": "Call POST /api/v1/Books",
       "parameters": {
         "type": "object",
-        "properties": {},
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "pageCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "excerpt": {
+            "type": "string",
+            "nullable": true
+          },
+          "publishDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
         "required": []
       }
     }
@@ -234,6 +315,26 @@
           "id": {
             "type": "integer",
             "format": "int32"
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "pageCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "excerpt": {
+            "type": "string",
+            "nullable": true
+          },
+          "publishDate": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "required": [
@@ -280,7 +381,21 @@
       "description": "Call POST /api/v1/CoverPhotos",
       "parameters": {
         "type": "object",
-        "properties": {},
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idBook": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "nullable": true
+          }
+        },
         "required": []
       }
     }
@@ -334,6 +449,15 @@
           "id": {
             "type": "integer",
             "format": "int32"
+          },
+          "idBook": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "nullable": true
           }
         },
         "required": [
@@ -380,7 +504,20 @@
       "description": "Call POST /api/v1/Users",
       "parameters": {
         "type": "object",
-        "properties": {},
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
         "required": []
       }
     }
@@ -415,6 +552,14 @@
           "id": {
             "type": "integer",
             "format": "int32"
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
           }
         },
         "required": [

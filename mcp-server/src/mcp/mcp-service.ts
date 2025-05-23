@@ -12,21 +12,27 @@ export class McpService {
         Object.entries(parameters.properties).map(([key, value]) => {
           const type = (value as any).type;
           const description = (value as any).description || '';
+          const nullable = (value as any).nullable || false;
+
           let paramType;
 
           switch (type) {
             case "integer":
             case "number":
               paramType = z.number().describe(description);
+              if (nullable) paramType = paramType.nullable();
               break;
             case "string":
               paramType = z.string().describe(description);
+              if (nullable) paramType = paramType.nullable();
               break;
             case "boolean":
               paramType = z.boolean().describe(description);
+              if (nullable) paramType = paramType.nullable();
               break;
             default:
               paramType = z.string().describe(description);
+              if (nullable) paramType = paramType.nullable();
           }
 
           return [key, paramType];
@@ -50,6 +56,5 @@ export class McpService {
         }
       );
     });
-
   }
 }
