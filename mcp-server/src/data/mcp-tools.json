@@ -1,0 +1,445 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "get__api_v1_Activities",
+      "description": "Call GET /api/v1/Activities",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "post__api_v1_Activities",
+      "description": "Call POST /api/v1/Activities",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get__api_v1_Activities__id_",
+      "description": "Call GET /api/v1/Activities/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "put__api_v1_Activities__id_",
+      "description": "Call PUT /api/v1/Activities/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "delete__api_v1_Activities__id_",
+      "description": "Call DELETE /api/v1/Activities/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get__api_v1_Authors",
+      "description": "Call GET /api/v1/Authors",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "post__api_v1_Authors",
+      "description": "Call POST /api/v1/Authors",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get__api_v1_Authors_authors_books__idBook_",
+      "description": "Call GET /api/v1/Authors/authors/books/{idBook}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "idBook": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "idBook"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get__api_v1_Authors__id_",
+      "description": "Call GET /api/v1/Authors/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "put__api_v1_Authors__id_",
+      "description": "Call PUT /api/v1/Authors/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "delete__api_v1_Authors__id_",
+      "description": "Call DELETE /api/v1/Authors/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get__api_v1_Books",
+      "description": "Call GET /api/v1/Books",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "post__api_v1_Books",
+      "description": "Call POST /api/v1/Books",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get__api_v1_Books__id_",
+      "description": "Call GET /api/v1/Books/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "put__api_v1_Books__id_",
+      "description": "Call PUT /api/v1/Books/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "delete__api_v1_Books__id_",
+      "description": "Call DELETE /api/v1/Books/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get__api_v1_CoverPhotos",
+      "description": "Call GET /api/v1/CoverPhotos",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "post__api_v1_CoverPhotos",
+      "description": "Call POST /api/v1/CoverPhotos",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get__api_v1_CoverPhotos_books_covers__idBook_",
+      "description": "Call GET /api/v1/CoverPhotos/books/covers/{idBook}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "idBook": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "idBook"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get__api_v1_CoverPhotos__id_",
+      "description": "Call GET /api/v1/CoverPhotos/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "put__api_v1_CoverPhotos__id_",
+      "description": "Call PUT /api/v1/CoverPhotos/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "delete__api_v1_CoverPhotos__id_",
+      "description": "Call DELETE /api/v1/CoverPhotos/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get__api_v1_Users",
+      "description": "Call GET /api/v1/Users",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "post__api_v1_Users",
+      "description": "Call POST /api/v1/Users",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get__api_v1_Users__id_",
+      "description": "Call GET /api/v1/Users/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "put__api_v1_Users__id_",
+      "description": "Call PUT /api/v1/Users/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "delete__api_v1_Users__id_",
+      "description": "Call DELETE /api/v1/Users/{id}",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "required": [
+          "id"
+        ]
+      }
+    }
+  }
+]

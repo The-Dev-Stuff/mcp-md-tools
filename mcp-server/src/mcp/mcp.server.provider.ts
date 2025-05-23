@@ -2,13 +2,15 @@ import { Injectable, OnModuleInit } from '@nestjs/common';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
 import { z } from 'zod';
+import { McpService } from './mcp-service';
+import tools from '../data/mcp-tools.json';
 
 @Injectable()
 export class McpServerProvider implements OnModuleInit {
   private server: McpServer;
   public transport: StreamableHTTPServerTransport;
 
-  constructor() {
+  constructor(private mcpService: McpService) {
     this.server = new McpServer({
       name: 'MCP Server',
       description: 'A server for the Model Context Protocol',
@@ -20,10 +22,9 @@ export class McpServerProvider implements OnModuleInit {
   }
 
   async onModuleInit() {
-    // Initialize the server or perform any setup needed
     console.log('McpServerProvider initialized.');
 
-    // Ideally we load the available tools from a configuration or a database
+    console.log('Registering tools...');
     this.server.tool(
       "add",
       "Use this tool to add two numbers together.",
@@ -42,6 +43,9 @@ export class McpServerProvider implements OnModuleInit {
         };
       }
     );
+
+    this.mcpService.registerToolsFromJson(tools, this.server);
+    console.log('Tools registered successfully.');
 
     await this.server.connect(this.transport);
   }

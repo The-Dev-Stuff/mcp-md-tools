@@ -19,6 +19,7 @@
     "noFallthroughCasesInSwitch": false,
     "moduleResolution": "NodeNext",
     "strict": true,
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "resolveJsonModule": true
   }
 }
