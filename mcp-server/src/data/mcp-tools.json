@@ -2,588 +2,740 @@
   {
     "type": "function",
     "function": {
-      "name": "get__api_v1_Activities",
-      "description": "Call GET /api/v1/Activities",
+      "name": "GET__api_v1_Activities",
+      "description": "Returns a list of activities.",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {}
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Activities",
+        "x-oas-method": "get",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "post__api_v1_Activities",
-      "description": "Call POST /api/v1/Activities",
+      "name": "POST__api_v1_Activities",
+      "description": "Creates a new activity.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           },
           "title": {
             "type": "string",
-            "nullable": true
+            "description": ""
           },
           "dueDate": {
             "type": "string",
-            "format": "date-time"
+            "description": ""
           },
           "completed": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": ""
           }
         },
-        "required": []
+        "required": [
+          "id",
+          "dueDate",
+          "completed"
+        ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Activities",
+        "x-oas-method": "post",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "get__api_v1_Activities__id_",
-      "description": "Call GET /api/v1/Activities/{id}",
+      "name": "GET__api_v1_Activities__id_",
+      "description": "Returns an activity by ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           }
         },
         "required": [
           "id"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Activities/{id}",
+        "x-oas-method": "get",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "put__api_v1_Activities__id_",
-      "description": "Call PUT /api/v1/Activities/{id}",
+      "name": "PUT__api_v1_Activities__id_",
+      "description": "Updates an activity by ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           },
           "title": {
             "type": "string",
-            "nullable": true
+            "description": ""
           },
           "dueDate": {
             "type": "string",
-            "format": "date-time"
+            "description": ""
           },
           "completed": {
-            "type": "boolean"
+            "type": "boolean",
+            "description": ""
           }
         },
         "required": [
-          "id"
+          "id",
+          "dueDate",
+          "completed"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Activities/{id}",
+        "x-oas-method": "put",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "delete__api_v1_Activities__id_",
-      "description": "Call DELETE /api/v1/Activities/{id}",
+      "name": "DELETE__api_v1_Activities__id_",
+      "description": "Deletes an activity by ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           }
         },
         "required": [
           "id"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Activities/{id}",
+        "x-oas-method": "delete",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "get__api_v1_Authors",
-      "description": "Call GET /api/v1/Authors",
+      "name": "GET__api_v1_Authors",
+      "description": "Returns a list of authors.",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {}
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Authors",
+        "x-oas-method": "get",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "post__api_v1_Authors",
-      "description": "Call POST /api/v1/Authors",
+      "name": "POST__api_v1_Authors",
+      "description": "Creates a new author.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           },
           "idBook": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           },
           "firstName": {
             "type": "string",
-            "nullable": true
+            "description": ""
           },
           "lastName": {
             "type": "string",
-            "nullable": true
+            "description": ""
           }
         },
-        "required": []
+        "required": [
+          "id",
+          "idBook"
+        ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Authors",
+        "x-oas-method": "post",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "get__api_v1_Authors_authors_books__idBook_",
-      "description": "Call GET /api/v1/Authors/authors/books/{idBook}",
+      "name": "GET__api_v1_Authors_authors_books__idBook_",
+      "description": "Returns authors by book ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "idBook": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           }
         },
         "required": [
           "idBook"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Authors/authors/books/{idBook}",
+        "x-oas-method": "get",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "get__api_v1_Authors__id_",
-      "description": "Call GET /api/v1/Authors/{id}",
+      "name": "GET__api_v1_Authors__id_",
+      "description": "Returns an author by ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           }
         },
         "required": [
           "id"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Authors/{id}",
+        "x-oas-method": "get",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "put__api_v1_Authors__id_",
-      "description": "Call PUT /api/v1/Authors/{id}",
+      "name": "PUT__api_v1_Authors__id_",
+      "description": "Updates an author by ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           },
           "idBook": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           },
           "firstName": {
             "type": "string",
-            "nullable": true
+            "description": ""
           },
           "lastName": {
             "type": "string",
-            "nullable": true
+            "description": ""
           }
         },
         "required": [
-          "id"
+          "id",
+          "idBook"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Authors/{id}",
+        "x-oas-method": "put",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "delete__api_v1_Authors__id_",
-      "description": "Call DELETE /api/v1/Authors/{id}",
+      "name": "DELETE__api_v1_Authors__id_",
+      "description": "Deletes an author by ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           }
         },
         "required": [
           "id"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Authors/{id}",
+        "x-oas-method": "delete",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "get__api_v1_Books",
-      "description": "Call GET /api/v1/Books",
+      "name": "GET__api_v1_Books",
+      "description": "Returns a list of books.",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {}
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Books",
+        "x-oas-method": "get",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "post__api_v1_Books",
-      "description": "Call POST /api/v1/Books",
+      "name": "POST__api_v1_Books",
+      "description": "Creates a new book.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           },
           "title": {
             "type": "string",
-            "nullable": true
+            "description": ""
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "description": ""
           },
           "pageCount": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           },
           "excerpt": {
             "type": "string",
-            "nullable": true
+            "description": ""
           },
           "publishDate": {
             "type": "string",
-            "format": "date-time"
+            "description": ""
           }
         },
-        "required": []
+        "required": [
+          "id",
+          "pageCount",
+          "publishDate"
+        ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Books",
+        "x-oas-method": "post",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "get__api_v1_Books__id_",
-      "description": "Call GET /api/v1/Books/{id}",
+      "name": "GET__api_v1_Books__id_",
+      "description": "Returns a book by ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           }
         },
         "required": [
           "id"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Books/{id}",
+        "x-oas-method": "get",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "put__api_v1_Books__id_",
-      "description": "Call PUT /api/v1/Books/{id}",
+      "name": "PUT__api_v1_Books__id_",
+      "description": "Updates a book by ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           },
           "title": {
             "type": "string",
-            "nullable": true
+            "description": ""
           },
           "description": {
             "type": "string",
-            "nullable": true
+            "description": ""
           },
           "pageCount": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           },
           "excerpt": {
             "type": "string",
-            "nullable": true
+            "description": ""
           },
           "publishDate": {
             "type": "string",
-            "format": "date-time"
+            "description": ""
           }
         },
         "required": [
-          "id"
+          "id",
+          "pageCount",
+          "publishDate"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Books/{id}",
+        "x-oas-method": "put",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "delete__api_v1_Books__id_",
-      "description": "Call DELETE /api/v1/Books/{id}",
+      "name": "DELETE__api_v1_Books__id_",
+      "description": "Deletes a book by ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           }
         },
         "required": [
           "id"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Books/{id}",
+        "x-oas-method": "delete",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "get__api_v1_CoverPhotos",
-      "description": "Call GET /api/v1/CoverPhotos",
+      "name": "GET__api_v1_CoverPhotos",
+      "description": "Returns a list of cover photos.",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {}
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/CoverPhotos",
+        "x-oas-method": "get",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "post__api_v1_CoverPhotos",
-      "description": "Call POST /api/v1/CoverPhotos",
+      "name": "POST__api_v1_CoverPhotos",
+      "description": "Creates a new cover photo.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           },
           "idBook": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           },
           "url": {
             "type": "string",
-            "format": "uri",
-            "nullable": true
+            "description": ""
           }
         },
-        "required": []
+        "required": [
+          "id",
+          "idBook"
+        ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/CoverPhotos",
+        "x-oas-method": "post",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "get__api_v1_CoverPhotos_books_covers__idBook_",
-      "description": "Call GET /api/v1/CoverPhotos/books/covers/{idBook}",
+      "name": "GET__api_v1_CoverPhotos_books_covers__idBook_",
+      "description": "Returns cover photos by book ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "idBook": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           }
         },
         "required": [
           "idBook"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/CoverPhotos/books/covers/{idBook}",
+        "x-oas-method": "get",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "get__api_v1_CoverPhotos__id_",
-      "description": "Call GET /api/v1/CoverPhotos/{id}",
+      "name": "GET__api_v1_CoverPhotos__id_",
+      "description": "Returns a cover photo by ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           }
         },
         "required": [
           "id"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/CoverPhotos/{id}",
+        "x-oas-method": "get",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "put__api_v1_CoverPhotos__id_",
-      "description": "Call PUT /api/v1/CoverPhotos/{id}",
+      "name": "PUT__api_v1_CoverPhotos__id_",
+      "description": "Updates a cover photo by ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           },
           "idBook": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           },
           "url": {
             "type": "string",
-            "format": "uri",
-            "nullable": true
+            "description": ""
           }
         },
         "required": [
-          "id"
+          "id",
+          "idBook"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/CoverPhotos/{id}",
+        "x-oas-method": "put",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "delete__api_v1_CoverPhotos__id_",
-      "description": "Call DELETE /api/v1/CoverPhotos/{id}",
+      "name": "DELETE__api_v1_CoverPhotos__id_",
+      "description": "Deletes a cover photo by ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           }
         },
         "required": [
           "id"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/CoverPhotos/{id}",
+        "x-oas-method": "delete",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "get__api_v1_Users",
-      "description": "Call GET /api/v1/Users",
+      "name": "GET__api_v1_Users",
+      "description": "Returns a list of users.",
       "parameters": {
         "type": "object",
-        "properties": {},
-        "required": []
+        "properties": {}
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Users",
+        "x-oas-method": "get",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "post__api_v1_Users",
-      "description": "Call POST /api/v1/Users",
+      "name": "POST__api_v1_Users",
+      "description": "Creates a new user.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           },
           "userName": {
             "type": "string",
-            "nullable": true
+            "description": ""
           },
           "password": {
             "type": "string",
-            "nullable": true
-          }
-        },
-        "required": []
-      }
-    }
-  },
-  {
-    "type": "function",
-    "function": {
-      "name": "get__api_v1_Users__id_",
-      "description": "Call GET /api/v1/Users/{id}",
-      "parameters": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
+            "description": ""
           }
         },
         "required": [
           "id"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Users",
+        "x-oas-method": "post",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "put__api_v1_Users__id_",
-      "description": "Call PUT /api/v1/Users/{id}",
+      "name": "GET__api_v1_Users__id_",
+      "description": "Returns a user by ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
+          }
+        },
+        "required": [
+          "id"
+        ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Users/{id}",
+        "x-oas-method": "get",
+        "x-auth-required": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "PUT__api_v1_Users__id_",
+      "description": "Updates a user by ID.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": ""
           },
           "userName": {
             "type": "string",
-            "nullable": true
+            "description": ""
           },
           "password": {
             "type": "string",
-            "nullable": true
+            "description": ""
           }
         },
         "required": [
           "id"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Users/{id}",
+        "x-oas-method": "put",
+        "x-auth-required": false
       }
     }
   },
   {
     "type": "function",
     "function": {
-      "name": "delete__api_v1_Users__id_",
-      "description": "Call DELETE /api/v1/Users/{id}",
+      "name": "DELETE__api_v1_Users__id_",
+      "description": "Deletes a user by ID.",
       "parameters": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
+            "description": ""
           }
         },
         "required": [
           "id"
         ]
+      },
+      "invokeInfo": {
+        "x-oas-path": "/api/v1/Users/{id}",
+        "x-oas-method": "delete",
+        "x-auth-required": false
       }
     }
   }

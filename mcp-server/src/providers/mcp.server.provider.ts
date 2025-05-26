@@ -2,7 +2,7 @@ import { Injectable, OnModuleInit } from '@nestjs/common';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
 import { z } from 'zod';
-import { McpService } from './mcp-service';
+import { McpService } from '../services/mcp-service';
 import tools from '../data/mcp-tools.json';
 
 @Injectable()

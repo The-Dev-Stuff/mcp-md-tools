@@ -1,17 +1,19 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { ToolController } from './controllers/tool.controller';
 import { McpController } from './controllers/mcp.controller';
-import { McpServerProvider } from './mcp/mcp.server.provider';
-import { McpService } from './mcp/mcp-service';
+
+import { McpServerProvider } from './providers/mcp.server.provider';
+
+import { McpService } from './services/mcp-service';
+import { ToolsService } from './services/tools-service';
 
 @Module({
   imports: [],
-  controllers: [AppController, McpController],
+  controllers: [ToolController, McpController],
   providers: [
-    AppService,
+    McpServerProvider,
     McpService,
-    McpServerProvider
+    ToolsService
   ],
 })
 export class AppModule {}

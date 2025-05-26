@@ -1,3 +1,4 @@
+
 {
   "openapi": "3.0.1",
   "info": {
@@ -7,6 +8,7 @@
   "paths": {
     "/api/v1/Activities": {
       "get": {
+        "description": "Returns a list of activities.",
         "tags": [
           "Activities"
         ],
@@ -43,6 +45,7 @@
         }
       },
       "post": {
+        "description": "Creates a new activity.",
         "tags": [
           "Activities"
         ],
@@ -91,6 +94,7 @@
     },
     "/api/v1/Activities/{id}": {
       "get": {
+        "description": "Returns an activity by ID.",
         "tags": [
           "Activities"
         ],
@@ -129,6 +133,7 @@
         }
       },
       "put": {
+        "description": "Updates an activity by ID.",
         "tags": [
           "Activities"
         ],
@@ -186,6 +191,7 @@
         }
       },
       "delete": {
+        "description": "Deletes an activity by ID.",
         "tags": [
           "Activities"
         ],
@@ -209,6 +215,7 @@
     },
     "/api/v1/Authors": {
       "get": {
+        "description": "Returns a list of authors.",
         "tags": [
           "Authors"
         ],
@@ -245,6 +252,7 @@
         }
       },
       "post": {
+        "description": "Creates a new author.",
         "tags": [
           "Authors"
         ],
@@ -293,6 +301,7 @@
     },
     "/api/v1/Authors/authors/books/{idBook}": {
       "get": {
+        "description": "Returns authors by book ID.",
         "tags": [
           "Authors"
         ],
@@ -342,6 +351,7 @@
     },
     "/api/v1/Authors/{id}": {
       "get": {
+        "description": "Returns an author by ID.",
         "tags": [
           "Authors"
         ],
@@ -380,6 +390,7 @@
         }
       },
       "put": {
+        "description": "Updates an author by ID.",
         "tags": [
           "Authors"
         ],
@@ -437,6 +448,7 @@
         }
       },
       "delete": {
+        "description": "Deletes an author by ID.",
         "tags": [
           "Authors"
         ],
@@ -460,6 +472,7 @@
     },
     "/api/v1/Books": {
       "get": {
+        "description": "Returns a list of books.",
         "tags": [
           "Books"
         ],
@@ -496,6 +509,7 @@
         }
       },
       "post": {
+        "description": "Creates a new book.",
         "tags": [
           "Books"
         ],
@@ -527,6 +541,7 @@
     },
     "/api/v1/Books/{id}": {
       "get": {
+        "description": "Returns a book by ID.",
         "tags": [
           "Books"
         ],
@@ -565,6 +580,7 @@
         }
       },
       "put": {
+        "description": "Updates a book by ID.",
         "tags": [
           "Books"
         ],
@@ -605,6 +621,7 @@
         }
       },
       "delete": {
+        "description": "Deletes a book by ID.",
         "tags": [
           "Books"
         ],
@@ -628,6 +645,7 @@
     },
     "/api/v1/CoverPhotos": {
       "get": {
+        "description": "Returns a list of cover photos.",
         "tags": [
           "CoverPhotos"
         ],
@@ -664,6 +682,7 @@
         }
       },
       "post": {
+        "description": "Creates a new cover photo.",
         "tags": [
           "CoverPhotos"
         ],
@@ -712,6 +731,7 @@
     },
     "/api/v1/CoverPhotos/books/covers/{idBook}": {
       "get": {
+        "description": "Returns cover photos by book ID.",
         "tags": [
           "CoverPhotos"
         ],
@@ -761,6 +781,7 @@
     },
     "/api/v1/CoverPhotos/{id}": {
       "get": {
+        "description": "Returns a cover photo by ID.",
         "tags": [
           "CoverPhotos"
         ],
@@ -799,6 +820,7 @@
         }
       },
       "put": {
+        "description": "Updates a cover photo by ID.",
         "tags": [
           "CoverPhotos"
         ],
@@ -856,6 +878,7 @@
         }
       },
       "delete": {
+        "description": "Deletes a cover photo by ID.",
         "tags": [
           "CoverPhotos"
         ],
@@ -879,6 +902,7 @@
     },
     "/api/v1/Users": {
       "get": {
+        "description": "Returns a list of users.",
         "tags": [
           "Users"
         ],
@@ -915,6 +939,7 @@
         }
       },
       "post": {
+        "description": "Creates a new user.",
         "tags": [
           "Users"
         ],
@@ -946,6 +971,7 @@
     },
     "/api/v1/Users/{id}": {
       "get": {
+        "description": "Returns a user by ID.",
         "tags": [
           "Users"
         ],
@@ -967,6 +993,7 @@
         }
       },
       "put": {
+        "description": "Updates a user by ID.",
         "tags": [
           "Users"
         ],
@@ -1007,6 +1034,7 @@
         }
       },
       "delete": {
+        "description": "Deletes a user by ID.",
         "tags": [
           "Users"
         ],
